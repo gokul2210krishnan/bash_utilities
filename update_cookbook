@@ -17,7 +17,7 @@ then
 		cp -rf $git_cb $workspace_folder && echo -e "\033[32mCopied ${profile_name} : LOCAL GIT REPO\033[0m"
 	else
 		[[ $log_level != 0 ]] && echo "Cookbook not found"
-		cp -rf $git_cb $workspace_folder && echo "Copied ${profile_name} : LOCAL GIT REPO"
+		cp -rf $git_cb $workspace_folder && echo -e "\033[32mCopied ${profile_name} : LOCAL GIT REPO\033[0m"
 	fi
 else
 	echo -e "\033[31mdirectory not found.. Maybe local git repo is not found\033[0m" >&2
