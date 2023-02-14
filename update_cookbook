@@ -13,8 +13,8 @@ then
 	if [ -d $workspace_cb ]
 	then
 		[[ $log_level != 0 ]] && echo "Cookbook found"
-		rm -rf $workspace_cb && echo "\033[32mDeleted ${profile_name} : WORKSPACE\033[0m"
-		cp -rf $git_cb $workspace_folder && echo "\033[32mCopied ${profile_name} : LOCAL GIT REPO\033[0m"
+		rm -rf $workspace_cb && echo -e "\033[32mDeleted ${profile_name} : WORKSPACE\033[0m" 
+		cp -rf $git_cb $workspace_folder && echo -e "\033[32mCopied ${profile_name} : LOCAL GIT REPO\033[0m"
 	else
 		[[ $log_level != 0 ]] && echo "Cookbook not found"
 		cp -rf $git_cb $workspace_folder && echo "Copied ${profile_name} : LOCAL GIT REPO"
