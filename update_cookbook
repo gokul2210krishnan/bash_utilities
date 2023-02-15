@@ -20,5 +20,5 @@ then
 		cp -rf $git_cb $workspace_folder && echo -e "\033[32mCopied ${profile_name} : LOCAL GIT REPO\033[0m\nCopied time \033[36m$(date +'%I:%M %p')\033[0m"
 	fi
 else
-	echo -e "\033[31mdirectory not found.. Maybe local git repo is not found\033[0m" >&2
+	echo -e "\033[36m$(date +'%I:%M %p')\033[0m \033[31mdirectory not found.. Maybe local git repo is not found\033[0m" >&2
 fi
